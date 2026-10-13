@@ -5,7 +5,7 @@ Este repositorio contiene el análisis comercial y operativo realizado para la c
 ## Contenido del repositorio
 
 * `Andes_Retail_Group_analysis.pbix.twb`: **[Archivo Principal]** Libro de trabajo nativo de Tableau que contiene la arquitectura del dashboard interactivo, el mapeo de KPIs financieros, la distribución geográfica del negocio y el desglose estacional.
-* `S10 Proyecto_VersionEstudiante_Desempeno_C...`: Jupyter Notebook complementario que documenta el pipeline de preparación de datos.
+* `Proyect_Sprint10_Andes_Retail.ipynb`: Jupyter Notebook complementario que documenta el pipeline de preparación de datos.
 
 ## Cómo abrir el dashboard en Tableau Public
 
