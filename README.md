@@ -23,7 +23,7 @@ Este análisis estratégico busca resolver tres preguntas de negocio:
 
 ## 📊 Proceso de Análisis y Etapas del Proyecto
 
-### 1. Preparación e Ingeniería de Datos (Python)
+### 1. Preparación de Datos (Python)
 *   Limpieza y unificación del histórico de transacciones comerciales para asegurar la consistencia del periodo 2024-2025.
 *   Tratamiento de anomalías e imputación lógica de variables operativas clave para su posterior consumo en la herramienta de BI.
 
