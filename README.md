@@ -1,35 +1,65 @@
-# Andes Retail Group Commercial Analysis – Sprint 10
+# Andes Retail Group - Commercial & Operations Analysis 🛒📊
 
-Este repositorio contiene el análisis comercial y operativo realizado para la compañía **Andes Retail Group** durante el periodo 2024-2025. El proyecto se centra en el diseño e implementación de un sistema de Business Intelligence interactivo desarrollado en **Tableau** para la toma de decisiones estratégicas, complementado con un procesamiento y validación previa de datos en **Python**.
+Este repositorio contiene un caso de estudio integral (End-to-End) de Inteligencia de Negocios y Analítica Comercial para **Andes Retail Group** enfocado en el periodo 2024-2025. El proyecto integra el procesamiento y validación previa de datos utilizando Python y el diseño de un ecosistema analítico interactivo de Diagnóstico de Causa Raíz en Tableau.
 
-## Contenido del repositorio
+---
 
-* `Andes_Retail_Group_analysis.pbix.twb`: **[Archivo Principal]** Libro de trabajo nativo de Tableau que contiene la arquitectura del dashboard interactivo, el mapeo de KPIs financieros, la distribución geográfica del negocio y el desglose estacional.
-* `Proyect_Sprint10_Andes_Retail.ipynb`: Jupyter Notebook complementario que documenta el pipeline de preparación de datos.
+## 🎯 Contexto y Problema de Negocio
+La alta dirección de Andes Retail Group requería auditar los factores subyacentes que impulsan o ralentizan la rentabilidad de la compañía en sus operaciones de Sudamérica. El negocio arrastra retos estructurales asociados a la variabilidad de la demanda a lo largo del año y la disparidad en los márgenes entregados por sus distintos tipos de consumidores.
 
-## Cómo abrir el dashboard en Tableau Public
+Este análisis estratégico busca resolver tres preguntas de negocio:
+1. ¿Qué tan severa es la dependencia cíclica de los ingresos respecto a las estaciones del año y a qué se deben las contracciones en los meses bajos?
+2. ¿Qué segmentos de clientes justifican los esfuerzos de retención y cómo podemos activar los segmentos marginales sin destruir valor?
+3. ¿Cómo se distribuye geográficamente el rendimiento comercial y dónde se localizan los focos rojos de la operación?
 
-Para interactuar con los filtros, mapas y desgloses operativos de este tablero de control, haz clic en el siguiente enlace:
+---
+
+## 🛠️ Tecnologías y Herramientas Utilizadas
+*   **Tableau Public:** Arquitectura visual interactiva de dos niveles (Overview y Detalle Técnico) y mapeo geoespacial.
+*   **Python (Pandas, NumPy):** Desarrollo del pipeline de ingeniería de datos, limpieza profunda, imputación de registros y validación de esquemas comerciales.
+*   **Jupyter Notebook:** Entorno de documentación del procesamiento inicial de datos.
+
+---
+
+## 📊 Proceso de Análisis y Etapas del Proyecto
+
+### 1. Preparación e Ingeniería de Datos (Python)
+*   Limpieza y unificación del histórico de transacciones comerciales para asegurar la consistencia del periodo 2024-2025.
+*   Tratamiento de anomalías e imputación lógica de variables operativas clave para su posterior consumo en la herramienta de BI.
+
+### 2. Arquitectura de Diagnóstico y Visualización (Tableau)
+*   **Estructura de Dos Niveles:** Diseño enfocado en la experiencia del usuario (UX) mediante una vista ejecutiva (*Overview*) para decisiones rápidas y una vista de desglose (*Detalle*) para auditorías profundas de causa raíz.
+*   **Análisis Geoespacial y Estacional:** Mapeo de KPIs de rentabilidad distribuidos geográficamente en Sudamérica combinados con líneas de tendencia de series de tiempo.
+
+---
+
+## 📈 Hallazgos Clave y Conclusiones de Negocio
+
+| Dimensión Analizada | Diagnóstico / Hallazgo | Implicación y Decisión Estratégica |
+| :--- | :--- | :--- |
+| **Ciclo Comercial y Estacionalidad** | Alta dependencia del **Verano** (con picos agresivos en Diciembre). Contracciones severas en Otoño y Primavera. | El estancamiento a mitad de año se debe **estrictamente a la caída en volumen de unidades vendidas** y no a ineficiencias en los costos de los productos. |
+| **Rentabilidad por Segmento** | Los segmentos **Premium** y **Estándar** sostienen la utilidad final. El segmento **Económico** tiene un aporte marginal invisible. | Se descarta usar el segmento Económico como motor de margen directo. Se propone utilizarlo para promociones agresivas de volumen en temporadas bajas (Otoño/Primavera) para suavizar la curva de caída anual. |
+| **Distribución Geográfica** | **Perú y Chile** lideran con comodidad el volumen absoluto de ingresos y utilidades. | **Colombia** se posiciona como el mercado con menor rendimiento relativo, marcando el foco de atención prioritario para reestructuraciones operativas. |
+
+---
+
+## 🚀 Recomendaciones Estratégicas
+1. **Suavizado de la Curva Estacional:** Diseñar campañas agresivas de incentivos por volumen dirigidas exclusivamente al segmento de clientes *Económico* durante las estaciones de otoño y primavera. Esto estimulará la demanda en los meses de contracción comercial sin comprometer los márgenes saludables de los clientes *Premium*.
+2. **Reestructuración de Mercado Focalizada:** Auditar las operaciones de la cadena de suministro y la estrategia de precios en *Colombia* para identificar las razones de su bajo rendimiento comparativo frente al éxito documentado en Perú y Chile.
+
+---
+
+## 🖼️ Interactividad y Acceso al Ecosistema
+
+### 📊 Cuadro de Mando en Tableau Public
+Haz clic en la insignia inferior para acceder directamente al dashboard interactivo, donde podrás manipular los filtros de estacionalidad, mapas regionales y desgloses analíticos:
 
 [![Tableau](https://shields.io)](https://public.tableau.com/app/profile/victor.vazquez7571/viz/Andes_Retail_Group_analysis_pbix/Overview)
 
-O también puedes usar este enlace directo: [Abrir en Tableau Public](https://public.tableau.com/app/profile/victor.vazquez7571/viz/Andes_Retail_Group_analysis_pbix/Overview)
+*(También puedes interactuar usando el [Enlace Directo a Tableau Public](https://public.tableau.com/app/profile/victor.vazquez7571/viz/Andes_Retail_Group_analysis_pbix/Overview))*
 
-## Objetivo del análisis
+---
 
-* **Diseñar un Dashboard de Diagnóstico de Causa Raíz:** Construir una arquitectura visual interactiva de dos niveles (Overview y Detalle) para auditar qué factores impulsan o frenan la rentabilidad de la compañía en Sudamérica.
-* **Analizar la Estacionalidad del Negocio:** Evaluar el comportamiento de los ingresos y la utilidad bruta a lo largo de las estaciones del año para determinar si el negocio depende críticamente de ciertos periodos cíclicos.
-* **Evaluar el Desempeño Comercial por Segmentos:** Contrastar el aporte financiero de los diferentes tipos de clientes (Premium, Estándar y Económico) frente al volumen de unidades vendidas y el margen bruto generado en cada región.
-
-## 📈 Hallazgos Estadísticos y Decisiones de Negocio (Findings)
-
-### 1. Ciclo Comercial y Dependencia Estacional
-* **Interpretación:** La operación muestra una altísima dependencia de la temporada de **Verano** (con picos navideños muy marcados en diciembre). Por el contrario, las temporadas de otoño y primavera presentan una contracción severa que estanca el rendimiento comercial en la mitad del año.
-* **Implicación de Negocio:** El desglose operativo confirma que la caída financiera fuera de temporada se debe estrictamente a un **bajo volumen de unidades vendidas** y no a una ineficiencia en el costo unitario de los productos.
-
-### 2. Aporte Financiero por Segmento de Cliente
-* **Interpretación:** Los clientes de los segmentos **Premium y Estándar** sostienen la rentabilidad global del grupo y absorben la operación en casi todas las regiones geográficas. El segmento **Económico** aporta un valor marginal casi invisible en la utilidad final.
-* **Implicación de Negocio:** Se descarta el uso del segmento Económico como motor de margen aislado. Se propone capitalizar este segmento para lanzar promociones agresivas de volumen dirigidas exclusivamente a las estaciones débiles (otoño y primavera), estimulando la demanda y suavizando la curva de caída anual sin comprometer el margen de los clientes Premium.
-
-### 3. Distribución Geográfica del Ingreso
-* **Interpretación:** **Perú y Chile** lideran con comodidad el volumen absoluto de ingresos y utilidades dentro de Sudamérica, mientras que el mercado de Colombia se posiciona como el de menor rendimiento relativo durante el periodo analizado.
+## 📂 Estructura del Repositorio
+*   `Andes_Retail_Group_analysis.pbix.twb`: Libro de trabajo nativo de Tableau que contiene el modelo, las relaciones de datos y las dashboards visuales.
+*   `Proyect_Sprint10_Andes_Retail.ipynb`: Jupyter Notebook que documenta el pipeline complementario de preparación y limpieza de datos en Python.
