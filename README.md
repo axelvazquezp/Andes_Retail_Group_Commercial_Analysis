@@ -61,5 +61,5 @@ Haz clic en la insignia inferior para acceder directamente al dashboard interact
 ---
 
 ## 📂 Estructura del Repositorio
-*   `Andes_Retail_Group_analysis.pbix.twb`: Libro de trabajo nativo de Tableau que contiene el modelo, las relaciones de datos y las dashboards visuales.
+*   `Andes_Retail_Group_analysis.twb`: Libro de trabajo nativo de Tableau que contiene el modelo, las relaciones de datos y las dashboards visuales.
 *   `Proyect_Sprint10_Andes_Retail.ipynb`: Jupyter Notebook que documenta el pipeline complementario de preparación y limpieza de datos en Python.
