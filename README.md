@@ -27,8 +27,8 @@ Este análisis estratégico busca resolver tres preguntas de negocio:
 *   Limpieza y unificación del histórico de transacciones comerciales para asegurar la consistencia del periodo 2024-2025.
 *   Tratamiento de anomalías e imputación lógica de variables operativas clave para su posterior consumo en la herramienta de BI.
 
-### 2. Arquitectura de Diagnóstico y Visualización (Tableau)
-*   **Estructura de Dos Niveles:** Diseño enfocado en la experiencia del usuario (UX) mediante una vista ejecutiva (*Overview*) para decisiones rápidas y una vista de desglose (*Detalle*) para auditorías profundas de causa raíz.
+### 2. Diseño de Visualización e Interfaz de BI (Tableau)
+*   **Estructura de Dos Niveles (UX):** Diseño enfocado en la experiencia del usuario mediante una vista ejecutiva (*Overview*) para decisiones rápidas y una vista de desglose (*Detalle*) para auditorías profundas de causa raíz.
 *   **Análisis Geoespacial y Estacional:** Mapeo de KPIs de rentabilidad distribuidos geográficamente en Sudamérica combinados con líneas de tendencia de series de tiempo.
 
 ---
